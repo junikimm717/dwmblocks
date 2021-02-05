@@ -19,9 +19,7 @@ blocks.h
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
+# Libraries *.lib *.a
 *.la
 *.lo
 
