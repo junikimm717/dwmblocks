@@ -6,6 +6,7 @@ static const Block blocks[] = {
 	{"", "acpi | awk '{print $3,$4}' | sed s/\,//g",					10,		0},
 	{"", "echo Sound: $(pamixer --get-volume)%",					1,		0},
 	{"", "echo Screen: $(brightnessctl | grep % | awk '{print $4}' | sed 's/(//g' | sed 's/)//g')",					1,		0},
+	{"", "~/scripts/network.sh",					5,		0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
