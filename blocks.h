@@ -2,10 +2,10 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 //	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
-	{"", "acpi | awk '{print $3,$4}' | sed s/\,//g",					10,		0},
-	{"", "echo Sound: $(pamixer --get-volume)%",					1,		0},
-	{"", "echo Screen: $(brightnessctl | grep % | awk '{print $4}' | sed 's/(//g' | sed 's/)//g')",					1,		0},
+	{"", "date '+%a %m/%d %I:%M%p'",					1,		0},
+	{"", "battery.sh",					1,		0},
+	{"", "echo SO: $(pamixer --get-volume)%",					1,		0},
+	{"", "echo BRI: $(brightness.sh)",					1,		0},
 	{"", "~/scripts/network.sh",					5,		0},
 };
 
